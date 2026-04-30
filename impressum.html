@@ -1,75 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum | AUDRÉY</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: #f7f5f2;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(247,245,242,0.9);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #183a5a;
+  margin-right: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 140px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #183a5a;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 120px;
+  padding: 40px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #183a5a;
+}
+</style>
+</head>
+
 <body>
 
-<header class="nav" id="nav">
-  <a href="index.html" class="nav-mark">Audréy</a>
-  <nav class="nav-center">
+<header class="nav">
+  <div>
+    <a href="index.html">Audréy</a>
+  </div>
+  <div>
     <a href="index.html#about">About</a>
     <a href="index.html#menu">Menu</a>
     <a href="index.html#gallery">Space</a>
     <a href="index.html#visit">Visit</a>
-  </nav>
-  <div class="nav-end" id="openStatus"></div>
+  </div>
 </header>
 
-<section style="padding:140px 40px; max-width:800px; margin:auto;">
+<div class="container">
 
-  <h1 style="font-size:28px; letter-spacing:3px; margin-bottom:40px; color:#183a5a;">
-    Impressum
-  </h1>
+<h1>Impressum</h1>
 
-  <p>
-    Audrey Gastronomie GmbH<br>
-    Holtzendorffstr. 18<br>
-    14057 Berlin<br>
-    Deutschland
-  </p>
+<p>
+Audrey Gastronomie GmbH<br>
+Holtzendorffstr. 18<br>
+14057 Berlin<br>
+Deutschland
+</p>
 
-  <p>
-    Tel.: +49 176 63490944<br>
-    E Mail: siennakamel1@gmail.com
-  </p>
+<p>
+Tel.: +49 176 63490944<br>
+E Mail: <a href="mailto:siennakamel1@gmail.com">siennakamel1@gmail.com</a>
+</p>
 
-  <p>
-    Registergericht: Amtsgericht Charlottenburg<br>
-    Registernummer: HRB 230215 B
-  </p>
+<p>
+Registergericht: Amtsgericht Charlottenburg<br>
+Registernummer: HRB 230215 B
+</p>
 
-  <p>
-    Geschäftsführer: Siham Kamel
-  </p>
+<p>
+Geschäftsführer: Siham Kamel
+</p>
 
-  <p>
-    Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
-  </p>
+<p>
+Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+</p>
 
-</section>
+</div>
 
 <footer class="footer">
-
   <span>© 2026 Audréy Gastronomie GmbH</span>
 
-  <span class="footer-mark">AUDRÉY</span>
-
   <span>
-    <a href="impressum.html">Impressum</a> ·
+    <a href="impressum.html">Impressum</a>
     <a href="datenschutz.html">Datenschutz</a>
-  </span>
-
-  <span class="footer-social">
     <a href="https://www.instagram.com/audreycoffeeco/" target="_blank">Instagram</a>
     <a href="mailto:audreycoffeeco@gmail.com">Email</a>
   </span>
-
 </footer>
 
-<script>
-const nav = document.getElementById('nav');
-const onScroll = () => {
-  if (window.scrollY > 24) nav.classList.add('is-scrolled');
-  else nav.classList.remove('is-scrolled');
-};
-window.addEventListener('scroll', onScroll, { passive: true });
-onScroll();
-</script>
-
 </body>
+</html>
