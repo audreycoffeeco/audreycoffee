@@ -794,6 +794,62 @@ a { color: inherit; text-decoration: none; }
   .feature:last-child { border-bottom: 0; }
   .info-list dl { grid-template-columns: 110px 1fr; }
 }
+/* 🔥 PEGA TODO ESTO ABAJO */
+
+@media (max-width: 768px) {
+
+  .nav {
+    grid-template-columns: 1fr auto;
+    padding: 16px 18px;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .hero {
+    padding: 120px 18px 30px;
+  }
+
+  .logo {
+    font-size: 64px;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-meta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 80px 18px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .gallery-tile {
+    min-height: 260px;
+  }
+
+  .gallery-tile:nth-child(1),
+  .gallery-tile:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .btn-reserve {
+    width: 100%;
+  }
+
+  .visit {
+    padding: 80px 18px 0;
+  }
+
+}
 </style>
 </head>
 <body>
