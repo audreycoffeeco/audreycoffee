@@ -849,6 +849,17 @@ a { color: inherit; text-decoration: none; }
     padding: 80px 18px 0;
   }
 
+@media (max-width: 768px) {
+
+  .feature:nth-last-child(-n+2) {
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .feature:last-child {
+    border-bottom: 0 !important;
+  }
+
+}
 }
 </style>
 </head>
