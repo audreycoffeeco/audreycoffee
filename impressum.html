@@ -65,8 +65,17 @@ body {
 
 <body>
 
-<header class="nav">
-  <a href="index.html">AUDRÉY</a>
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-mark">Audréy</a>
+
+  <nav class="nav-center">
+    <a href="index.html#about">About</a>
+    <a href="index.html#menu">Menu</a>
+    <a href="index.html#gallery">Space</a>
+    <a href="index.html#visit">Visit</a>
+  </nav>
+
+  <div class="nav-end" id="openStatus"></div>
 </header>
 
 <section class="impressum">
@@ -98,6 +107,34 @@ body {
   </p>
 
 </section>
+<script>
+const hours = {
+  1: "08:00 – 17:30",
+  2: "08:00 – 17:30",
+  3: "08:00 – 17:30",
+  4: "08:00 – 17:30",
+  5: "09:00 – 17:00",
+  6: "09:00 – 17:00",
+  0: "09:00 – 17:00"
+};
 
+const today = new Date().getDay();
+const todayHours = hours[today];
+
+document.getElementById("openStatus").innerHTML =
+  `<span class="dot"></span>OPEN TODAY · ${todayHours}`;
+</script>
+
+  <footer class="footer">
+  <span>© 2026 Audréy Gastronomie GmbH</span>
+
+  <span class="footer-mark">AUDRÉY</span>
+
+  <span class="footer-social">
+    <a href="https://www.instagram.com/audreycoffeeco/" target="_blank">Instagram</a>
+    <a href="mailto:audreycoffeeco@gmail.com">Email</a>
+    <a href="impressum.html">Impressum</a>
+  </span>
+</footer>
 </body>
 </html>
