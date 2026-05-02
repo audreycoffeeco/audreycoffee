@@ -12,7 +12,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+  
+    .insta-link {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
 
+.insta-link svg {
+  position: relative;
+  top: 2px;
+}
+
+.insta-link:hover {
+  opacity: 1;
+}
 body {
   font-family: 'Josefin Sans', sans-serif;
   background: #f7f5f2;
@@ -196,8 +212,20 @@ a {
     <a href="index.html#gallery">Space</a>
     <a href="index.html#visit">Visit</a>
   </nav>
+  
+<div class="nav-end">
 
-  <div class="nav-end" id="openStatus"></div>
+  <a href="https://www.instagram.com/audreycoffeeco/" target="_blank" class="insta-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+      <circle cx="17" cy="7" r="1.5" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <div id="openStatus"></div>
+
+</div>
 </header>
 
 <section class="impressum">
