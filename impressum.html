@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Impressum — AUDRÉY</title>
+<title>Datenschutz — AUDRÉY</title>
 
 <link rel="icon" type="image/png" href="https://cdn.phototourl.com/free/2026-04-30-634db0b2-5fb9-46e1-8f74-230599c2ea52.png">
 
@@ -128,6 +128,54 @@ a {
   display: flex;
   gap: 20px;
 }
+
+@media (max-width: 960px) {
+
+  .nav-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-center a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .nav-center {
+  display: none;
+}
+
+.nav-end {
+  display: none;
+}
+  .nav {
+  grid-template-columns: 1fr auto;
+  padding: 16px 18px;
+}
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 16px 16px;
+    gap: 8px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 14px;
+    font-size: 10px;
+  }
+
+  .footer p {
+    max-width: 240px;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+}
 </style>
 </head>
 
@@ -208,4 +256,4 @@ document.getElementById("openStatus").innerHTML =
   </span>
 </footer>
 </body>
-</html>
+</html>  
