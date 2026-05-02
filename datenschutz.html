@@ -255,13 +255,17 @@ const hours = {
 };
 
 const today = new Date().getDay();
+const todayHours = hours[today];
+
 document.getElementById("openStatus").innerHTML =
-  `OPEN TODAY · ${hours[today]}`;
+  `<span class="dot"></span>OPEN TODAY · ${todayHours}`;
 </script>
 
-<footer class="footer">
+  <footer class="footer">
   <span>© 2026 Audréy Gastronomie GmbH</span>
+
   <span class="footer-mark">AUDRÉY</span>
+
   <span class="footer-social">
     <a href="https://www.instagram.com/audreycoffeeco/" target="_blank">Instagram</a>
     <a href="mailto:audreycoffeeco@gmail.com">Email</a>
@@ -269,6 +273,5 @@ document.getElementById("openStatus").innerHTML =
     <a href="datenschutz.html">Privacy Policy</a>
   </span>
 </footer>
-
 </body>
-</html>
+</html>  
