@@ -114,17 +114,6 @@ a { color: inherit; text-decoration: none; }
   vertical-align: middle;
   box-shadow: 0 0 0 4px rgba(46, 158, 91, 0.18);
 }
-  .insta-link {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 6px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-}
-
-.insta-link:hover {
-  opacity: 1;
-}
 
 /* ============ HERO ============ */
 .hero {
@@ -926,6 +915,21 @@ a { color: inherit; text-decoration: none; }
   }
 
 }
+  }
+
+.insta-link {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.insta-link:hover {
+  opacity: 1;
+}
+
+</style>
 }
 </style>
 </head>
@@ -1367,13 +1371,12 @@ const today = new Date().getDay();
 const todayHours = hours[today];
 
 document.getElementById("openStatus").innerHTML =
-   `<a href="https://instagram.com/audreycoffeeco" target="_blank" class="insta-link">
+  `<a href="#" class="instagram.com/audreycoffeeco">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
         <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/>
       </svg>
    </a>
-  `<span class="dot"></span>OPEN TODAY · ${todayHours}`;
-</script>
+   <span class="dot"></span>OPEN TODAY · ${todayHours}`;
 
 </body>
 </html>
